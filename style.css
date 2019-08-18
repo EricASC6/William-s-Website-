@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --white: rgb(250, 250, 250);
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -6,9 +12,12 @@ body {
 
 /* Nav */
 nav {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     align-items: center;
+    font-family: 'Robotot', sans-serif;
+    background: rgb(125,125,255);
+    background: linear-gradient(90deg, rgba(125,125,255,1) 37%, rgba(143,235,254,1) 100%);
 }
 
 .container {
@@ -18,6 +27,9 @@ nav {
 
 .nav-head a{
     text-decoration: none;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 22px;
 }
 
 .nav-links {
@@ -32,6 +44,9 @@ nav {
 
 .nav-links a {
     text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 #nav-container {
