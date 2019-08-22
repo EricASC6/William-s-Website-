@@ -323,3 +323,53 @@ main {
     -webkit-background-clip: text;
     background-clip: text;
 }
+
+/* My awards */
+.awards {
+    background-color: white;
+    height: 100vh;
+}
+
+#awards-head {
+    margin-top: 150px;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+#awards-head h1 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+#awards-head p {
+    color: var(--gray);
+    font-size: 18px;
+}
+
+#awards-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.abox {
+    text-align: center;
+}
+
+.abox img {
+    height: 350px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.abox h2 {
+    margin: 10px 0 10px 0;
+}
+
+.abox p {
+    color: var(--gray);
+    text-transform: capitalize;
+}
