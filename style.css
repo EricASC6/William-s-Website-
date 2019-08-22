@@ -373,3 +373,78 @@ main {
     color: var(--gray);
     text-transform: capitalize;
 }
+
+
+/* footer */
+footer {
+    background-color: black;
+    height: 30vh;
+    display: flex;
+    align-content: center;
+}
+
+footer h1 {
+    font-size: 25px;
+}
+
+#footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-about-me {
+    color: var(--white);
+    width: 60%;
+}
+
+#footer-about-me h1 {
+    margin-bottom: 20px;
+}
+
+#footer-about-me p {
+    color: var(--gray);
+}
+
+.follow-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.follow-me p {
+    color: var(--gray);
+    margin: 20px 0 20px 0;
+}
+
+.media {
+    display: flex;
+}
+
+.media a {
+    margin-right: 20px;
+}
+
+.media a i {
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+.media a i:hover{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        color: white;
+    }
+    to {
+        background: rgb(125,125,255);
+        background: linear-gradient(90deg, rgba(125,125,255,1) 37%, rgba(143,235,254,1) 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
