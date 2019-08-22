@@ -222,6 +222,7 @@ main {
     background: linear-gradient(90deg, rgba(125,125,255,1) 37%, rgba(143,235,254,1) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 /*  */
@@ -254,6 +255,7 @@ main {
     width: 75%;
     margin: auto;
     margin-top: 150px;
+    margin-bottom: 25px;
 }
 
 #about-head h1 {
@@ -294,12 +296,30 @@ main {
 
 .ibox .fas{
     font-size: 3.5rem;
+    color: rgb(211, 211, 211);
 }
 
 .ibox .far {
     font-size: 3.5rem;
+    color: rgb(211, 211, 211);
 }
 
 .ibox:hover {
-    box-shadow: 0 10px 100px 0 rgba(153, 153, 153, 0.187);
+    box-shadow: 0 10px 100px 0 rgba(153, 153, 153, 0.235);
+}
+
+.ibox:hover .fas {
+    background: rgb(125,125,255);
+    background: linear-gradient(90deg, rgba(125,125,255,1) 37%, rgba(143,235,254,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.ibox:hover .far {
+    background: rgb(125,125,255);
+    background: linear-gradient(90deg, rgba(125,125,255,1) 37%, rgba(143,235,254,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
