@@ -15,9 +15,9 @@ body {
 
 /* Nav */
 nav {
-  height: 15vh;
+  height: 6rem;
   display: flex;
-  align-items: center;
+  /* align-items: c; */
   background: rgb(125, 125, 255);
   background: linear-gradient(
     90deg,
@@ -30,7 +30,7 @@ nav {
 }
 
 .container {
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
 
@@ -63,19 +63,20 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
 }
 
 /*  */
 
 /*  Main  */
 main {
-  height: 110vh;
-  margin-bottom: 125px;
+  height: 45rem;
+  /* margin-bottom: 125px; */
   position: relative;
 }
 
 .bg {
-  height: 90vh;
+  height: 45rem;
   background: rgb(125, 125, 255);
   background: linear-gradient(
     90deg,
@@ -96,13 +97,14 @@ main {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 20px 125px 0 rgb(153, 153, 153);
-  top: -75vh;
+  margin: auto;
+  top: -40rem;
 }
 
 .portrait img {
   border-radius: 0 20px 20px 20px;
-  height: 800px;
-  width: 700px;
+  height: 700px;
+  width: 600px;
 }
 
 .about-me-container {
@@ -162,7 +164,7 @@ main {
 
 /*  About myself */
 .about-myself {
-  height: 80vh;
+  height: 55rem;
   display: flex;
   align-items: center;
   background-color: #f9f9ff;
@@ -172,6 +174,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 200px;
 }
 
 #about {
@@ -240,7 +243,7 @@ main {
 
 /* Time line */
 .timeline {
-  height: 110vh;
+  height: 55rem;
   background: rgb(125, 125, 255);
   background: linear-gradient(
     90deg,
@@ -276,7 +279,7 @@ main {
   width: 5px;
   background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
-  left: 47%;
+  left: 48%;
 }
 
 .experience {
@@ -297,7 +300,7 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   position: absolute;
-  left: 45%;
+  left: 46.9%;
   top: 50px;
 }
 
@@ -308,7 +311,7 @@ main {
   background-color: #ffffff;
   border-radius: 50%;
   display: block;
-  position: relative;
+  position: absolute;
   top: 4px;
   left: 4px;
 }
@@ -344,7 +347,7 @@ main {
 
 /* Interests */
 .interests {
-  height: 110vh;
+  height: 55rem;
   background-color: #f9f9ff;
   margin-top: 0;
 }
@@ -440,7 +443,7 @@ main {
 /* My awards */
 .awards {
   background-color: white;
-  height: 100vh;
+  height: 55rem;
 }
 
 #awards-head {
@@ -490,7 +493,7 @@ main {
 /* footer */
 footer {
   background-color: black;
-  height: 30vh;
+  height: 10rem;
   display: flex;
   align-content: center;
 }
