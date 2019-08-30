@@ -163,6 +163,38 @@ main {
   font-size: 25px;
 }
 
+@media only screen and (max-width: 1200px) {
+  main {
+    height: 60rem;
+  }
+
+  .bg {
+    height: 65rem;
+  }
+
+  #main-container {
+    flex-direction: column;
+    top: -60rem;
+    max-width: 960px;
+  }
+
+  .about-me-container {
+    margin: 0;
+    max-width: 500px;
+    margin-top: 15px;
+  }
+
+  .portrait {
+    width: 500px;
+  }
+
+  .portrait img {
+    height: 500px;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
 /*  About myself */
 .about-myself {
   height: 55rem;
@@ -238,6 +270,16 @@ main {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-myself {
+    height: 60rem;
+  }
+
+  #about-myself-container {
+    margin-top: 300px;
+  }
 }
 
 /*  */
@@ -489,6 +531,12 @@ main {
 .abox p {
   color: var(--gray);
   text-transform: capitalize;
+}
+@media only screen and (max-width: 1200px) {
+  .abox img {
+    height: 210px;
+    width: 210px;
+  }
 }
 
 /* footer */
