@@ -6,6 +6,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -282,6 +283,23 @@ main {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  #about-myself-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #about-boxes {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 30%;
+  }
+}
+
 /*  */
 
 /* Time line */
@@ -423,7 +441,7 @@ main {
 #interests-boxes {
   display: flex;
   margin-top: 60px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .ibox {
@@ -434,6 +452,7 @@ main {
   transition-property: box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+  max-width: 290px;
 }
 
 .ibox h1 {
@@ -481,6 +500,12 @@ main {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+@media only screen and (max-width: 1050px) {
+  .ibox {
+    width: 280px;
+  }
 }
 
 /* My awards */
