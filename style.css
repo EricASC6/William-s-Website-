@@ -225,6 +225,7 @@ main {
   font-size: 25px;
   color: var(--gray);
   line-height: 1.5;
+  width: 100%;
 }
 
 #about-boxes {
@@ -293,10 +294,40 @@ main {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    margin-top: 15px;
   }
 
   .box {
     width: 30%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #about h1 {
+    font-size: 45px;
+  }
+
+  #about p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about-myself {
+    height: 80rem;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  #about-boxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
   }
 }
 
@@ -421,7 +452,7 @@ main {
 
 #about-head {
   text-align: center;
-  width: 75%;
+  width: 100%;
   margin: auto;
   margin-top: 150px;
   margin-bottom: 25px;
@@ -442,6 +473,7 @@ main {
   display: flex;
   margin-top: 60px;
   justify-content: space-around;
+  width: 100%;
 }
 
 .ibox {
@@ -452,7 +484,7 @@ main {
   transition-property: box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
-  max-width: 290px;
+  max-width: 330px;
 }
 
 .ibox h1 {
@@ -503,8 +535,53 @@ main {
 }
 
 @media only screen and (max-width: 1050px) {
+  .interests {
+    height: 75rem;
+  }
+
+  #interests-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
   .ibox {
-    width: 280px;
+    max-width: 100%;
+    justify-self: center;
+    /* height: 350px; */
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .interests {
+    height: 80rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .interests {
+    height: 85rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .interests {
+    height: 90rem;
+  }
+
+  #interests-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+
+  .ibox {
+    min-width: 100%;
+    margin-bottom: 15px;
   }
 }
 
@@ -561,6 +638,13 @@ main {
   .abox img {
     height: 210px;
     width: 210px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #awards-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
