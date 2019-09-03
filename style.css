@@ -18,16 +18,16 @@ body {
 nav {
   height: 6rem;
   display: flex;
-  /* align-items: c; */
+  align-items: center;
   background: rgb(125, 125, 255);
   background: linear-gradient(
     90deg,
     rgba(125, 125, 255, 1) 37%,
     rgba(143, 235, 254, 1) 100%
   );
-  /* position: sticky;
-  top: 0;
-  z-index: 2; */
+  top: -55px;
+  transition-duration: 0.7s;
+  transition-property: top;
 }
 
 .container {
@@ -65,7 +65,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
 }
 
 /*  */
