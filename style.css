@@ -67,7 +67,62 @@ nav {
   align-items: center;
 }
 
-/*  */
+/* Burger */
+.burger {
+  width: 25px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+/* Nav continued */
+@media only screen and (max-width: 1100px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    background: black;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .active {
+    z-index: 1;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    background-color: black;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 15px;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
 
 /*  Main  */
 main {
@@ -94,6 +149,7 @@ main {
   display: flex;
   position: relative;
   padding: 35px;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
   border-radius: 20px;
@@ -109,7 +165,7 @@ main {
 }
 
 .about-me-container {
-  margin-left: 125px;
+  margin-left: 75px;
 }
 
 .about-me h2 {
@@ -163,7 +219,7 @@ main {
   font-size: 25px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
   main {
     height: 60rem;
   }
@@ -192,6 +248,36 @@ main {
     height: 500px;
     width: 100%;
     border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .portrait {
+    width: 450px;
+  }
+
+  .portrait img {
+    height: 450px;
+    width: 100%;
+  }
+
+  .about-me-container {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .portrait {
+    width: 400px;
+  }
+
+  .portrait img {
+    height: 400px;
+    width: 100%;
+  }
+
+  .about-me-container {
+    max-width: 400px;
   }
 }
 
@@ -273,7 +359,7 @@ main {
   background-clip: text;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
   .about-myself {
     height: 60rem;
   }
@@ -644,6 +730,12 @@ main {
   #awards-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .awards {
+    height: 60rem;
   }
 }
 
