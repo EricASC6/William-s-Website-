@@ -247,7 +247,7 @@ main {
   .portrait img {
     height: 500px;
     width: 100%;
-    border-radius: 0;
+    border-radius: 10px;
   }
 }
 
@@ -278,6 +278,93 @@ main {
 
   .about-me-container {
     max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  main {
+    height: auto;
+    box-shadow: 0 10px 50px 0 rgba(128, 128, 128, 0.447);
+    background: white;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .portrait img {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #main-container {
+    box-shadow: none;
+    position: static;
+    padding: 0;
+  }
+
+  .about-me-container {
+    max-width: 400px;
+  }
+
+  /* .about-me-container > div {
+    width: 100%;
+  } */
+
+  .social-media {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .portrait {
+    max-width: 350px;
+  }
+
+  .portrait img {
+    max-width: 350px;
+    width: 100%;
+    height: 350px;
+  }
+
+  .about-me-container {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .portrait {
+    max-width: 300px;
+  }
+
+  .portrait img {
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+  }
+
+  .about-me-container {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .portrait {
+    max-width: 250px;
+  }
+
+  .portrait img {
+    max-width: 250px;
+    width: 100%;
+    height: 250px;
+  }
+
+  .about-me-container {
+    max-width: 250px;
   }
 }
 
@@ -413,6 +500,18 @@ main {
 
   .box {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .about-myself {
+    align-items: flex-start;
+    justify-content: center;
+    height: 65rem;
+  }
+
+  #about-myself-container {
+    margin-top: 100px;
   }
 }
 
@@ -736,6 +835,30 @@ main {
 @media only screen and (max-width: 750px) {
   .awards {
     height: 60rem;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .awards {
+    height: 93rem;
+  }
+
+  #awards-head {
+    margin-top: 75px;
+  }
+
+  #awards-boxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .abox {
+    margin-bottom: 35px;
+  }
+
+  .abox img {
+    width: 300px;
+    height: 300px;
   }
 }
 
