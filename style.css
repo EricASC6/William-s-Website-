@@ -289,7 +289,7 @@ main {
   }
 
   .container {
-    width: 90%;
+    width: 85%;
   }
 
   .bg {
@@ -500,6 +500,7 @@ main {
 
   .box {
     width: 100%;
+    margin: 25px 0 25px 0;
   }
 }
 
@@ -512,6 +513,12 @@ main {
 
   #about-myself-container {
     margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #about h1 {
+    font-size: 36px;
   }
 }
 
@@ -619,6 +626,47 @@ main {
 
 .timeline-body p {
   color: rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (max-width: 650px) {
+  .timeline {
+    height: auto;
+  }
+
+  #timeline-container {
+    margin-top: 100px;
+    padding-bottom: 75px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .experience span {
+    display: none;
+  }
+
+  .experience span::before {
+    display: none;
+  }
+
+  .timeline-list::before {
+    display: none;
+  }
+
+  .experience li {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .experience li h2 {
+    text-align: left;
+  }
+
+  .timeline-body {
+    margin-left: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
 }
 
 /* Interests */
@@ -765,7 +813,7 @@ main {
 
   .ibox {
     min-width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 
@@ -862,6 +910,13 @@ main {
   }
 }
 
+@media only screen and (max-width: 370px) {
+  .abox img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 /* footer */
 footer {
   background-color: black;
@@ -929,4 +984,35 @@ footer h1 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+/*  Responsive footer */
+@media only screen and (max-width: 460px) {
+  footer {
+    height: auto;
+    padding: 30px;
+  }
+
+  #footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #footer-about-me {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  #footer-about-me p {
+    width: 100%;
+  }
+}
+
+/*  Height adjustment */
+@media only screen and (max-width: 500px) {
+  .about-myself,
+  .awards,
+  .interests {
+    height: auto;
+  }
 }
