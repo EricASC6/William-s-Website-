@@ -98,43 +98,29 @@ nav {
   }
 
   .nav-links {
-    display: none;
-  }
-
-  .nav-links ul li {
-    width: 100%;
-    text-align: center;
-    animation: transition 0.7s;
-  }
-
-  @keyframes transition {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  .nav-links.active {
-    display: block;
+    visibility: hidden;
     z-index: 1;
     position: absolute;
     top: 5rem;
     left: 0;
     width: 100%;
     background-color: black;
-    animation-name: navbarTransition;
-    animation-duration: 0.3s;
+    max-height: 0px;
+    transition: height 0.3s;
   }
 
-  @keyframes navbarTransition {
-    from {
-      height: 0;
-    }
-    to {
-      height: 260px;
-    }
+  .nav-links ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links ul li a {
+    height: 1000px;
+  }
+
+  .nav-links.active {
+    visibility: visible;
+    height: 260px;
   }
 
   .nav-links ul {
