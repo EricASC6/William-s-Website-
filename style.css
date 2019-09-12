@@ -32,6 +32,7 @@ nav {
 nav.scroll-down {
   z-index: 1;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   left: 0;
   background: black;
@@ -107,6 +108,7 @@ nav.scroll-down {
   nav.scroll-down {
     z-index: 1;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     left: 0;
   }
