@@ -25,9 +25,16 @@ nav {
     rgba(125, 125, 255, 1) 37%,
     rgba(143, 235, 254, 1) 100%
   );
-  top: -55px;
-  transition-duration: 0.7s;
-  transition-property: top;
+  top: -5rem;
+  transition: top 0.7s ease-out 0.1s;
+}
+
+nav.scroll-down {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: black;
 }
 
 .container {
@@ -97,15 +104,21 @@ nav {
     background: black;
   }
 
+  nav.scroll-down {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
   .nav-links {
-    visibility: hidden;
+    display: none;
     z-index: 1;
     position: absolute;
     top: 5rem;
     left: 0;
     width: 100%;
     background-color: black;
-    max-height: 0px;
     transition: height 0.3s;
   }
 
@@ -114,13 +127,8 @@ nav {
     text-align: center;
   }
 
-  .nav-links ul li a {
-    height: 1000px;
-  }
-
   .nav-links.active {
-    visibility: visible;
-    height: 260px;
+    display: block;
   }
 
   .nav-links ul {
